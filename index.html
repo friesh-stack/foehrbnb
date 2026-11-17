@@ -158,13 +158,25 @@ footer .sig{border-top:1px solid #2a3a44;margin-top:16px;padding-top:12px;displa
 @media(max-width:520px){.gal{grid-template-columns:1fr}}
 .credits{font-size:.78rem;color:#93a4ae;margin:14px 0 0}
 .credits a{color:#c9d4da;text-decoration:underline}
+.infos{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:26px}
+.infobox{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.infobox h3{font-size:1.2rem;margin:0 0 10px}
+.fls{display:flex;flex-direction:column;gap:8px}
+.fl{display:flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-decoration:none;color:var(--ink)}
+.fl:hover{border-color:var(--brand)}
+.fl .fi{font-size:1.4rem}.fl b{display:block;font-size:.98rem}.fl small{display:block;color:var(--muted);font-size:.84rem;line-height:1.35}
+.fl .go{margin-left:auto;font-size:1.4rem;color:var(--brand)}
+.kur{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.kur li{background:var(--white);border-radius:12px;padding:10px 12px;border:1px solid var(--line);font-size:.94rem}
+.ihint{font-size:.84rem;color:var(--muted);margin:12px 0 0}
+@media(max-width:820px){.infos{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <nav><div class="wrap">
   <a class="brand" href="#top">Föhr<span>BnB</span><small>Ferienwohnungen auf Föhr – direkt vom Gastgeber</small></a>
-  <div class="nl"><a href="#orte">Orte</a><a href="#tipps">Föhr-Tipps</a><a href="#anreise">Anreise</a><a href="#vermieter">Für Vermieter</a><a class="btn" href="https://nordseebnb.de/?ort=Föhr">Unterkunft finden</a></div>
+  <div class="nl"><a href="#orte">Orte</a><a href="#tipps">Föhr-Tipps</a><a href="#anreise">Anreise</a><a href="#kurabgabe">Kurabgabe</a><a href="#vermieter">Für Vermieter</a><a class="btn" href="https://nordseebnb.de/?ort=Föhr">Unterkunft finden</a></div>
 </div></nav>
 
 <header class="hero" id="top">
@@ -232,7 +244,7 @@ footer .sig{border-top:1px solid #2a3a44;margin-top:16px;padding-top:12px;displa
       <div class="tip"><span>👣</span><b>Wattwanderung nach Amrum</b><small>Bei Ebbe geht es ab Dunsum zu Fuß übers Watt nach Amrum – nur mit Führung, die Gezeiten sind tückisch. Zurück fährt die Fähre.</small></div>
       <div class="tip"><span>🐕</span><b>Mit Hund nach Föhr</b><small>Es gibt ausgewiesene Hundestrände. Fragen Sie beim Gastgeber, ob Ihr Hund willkommen ist – die Suche zeigt es Ihnen.</small></div>
       <div class="tip"><span>⛪</span><b>Friesische Kultur</b><small>Alte Kirchen, Kapitänshäuser und das Friesenmuseum in Wyk erzählen von der Seefahrergeschichte der Insel. Auf Föhr wird auch Friesisch gesprochen.</small></div>
-      <div class="tip"><span>🎫</span><b>Kurabgabe</b><small>Die Gemeinden auf Föhr erheben eine Kurabgabe nach eigener Satzung. Die genauen Beträge nennt Ihnen Ihr Gastgeber.</small></div>
+      <div class="tip"><span>🎫</span><b>Kurabgabe</b><small>Die aktuellen Beträge für 2026 finden Sie unten bei <a href="#kurabgabe">Anreise &amp; Kurabgabe</a>.</small></div>
     </div>
   </div>
 </section>
@@ -249,6 +261,20 @@ footer .sig{border-top:1px solid #2a3a44;margin-top:16px;padding-top:12px;displa
       <div class="an"><span style="font-size:1.6rem">✈️</span><h3>Flugplatz Wyk</h3><p>Föhr hat einen kleinen Flugplatz bei Wyk für Charter- und Privatflüge.</p></div>
     </div>
     <p class="muted" style="font-size:.9rem;margin-top:14px;color:var(--muted)">Fahrpläne und Preise ändern sich – bitte vor der Reise beim jeweiligen Anbieter prüfen.</p>
+
+    <div class="infos" id="fahrplaene">
+      <div class="infobox">
+        <h3>🕒 Fahrpläne &amp; Tickets</h3>
+        <div class="fls"><a class="fl" href="https://www.faehre.de/" target="_blank" rel="noopener"><span class="fi">⛴️</span><span><b>W.D.R. Fähre Dagebüll – Wyk</b><small>Fahrplan, Tickets und Pkw-Reservierung</small></span><span class="go">›</span></a><a class="fl" href="https://www.faehre.de/fileadmin/content/pdf_downloads_termine_faltblaetter/pdf_fahrplan/WDR_Faehre_Fahrplanflyer_2026.pdf" target="_blank" rel="noopener"><span class="fi">📄</span><span><b>Fahrplan 2026 als PDF</b><small>Dagebüll – Föhr – Amrum und Halligen (W.D.R.)</small></span><span class="go">›</span></a><a class="fl" href="https://www.bahn.de/" target="_blank" rel="noopener"><span class="fi">🚆</span><span><b>Bahn bis Dagebüll Mole</b><small>Züge über Niebüll bis direkt an den Fähranleger</small></span><span class="go">›</span></a></div>
+        <p class="ihint">⚠️ Bei Niedrigwasser oder Sturm kann sich der Fahrplan kurzfristig ändern – aktuelle Hinweise stehen auf faehre.de.</p>
+      </div>
+      <div class="infobox" id="kurabgabe">
+        <h3>🎫 Kurabgabe auf Föhr</h3>
+        <ul class="kur"><li><b>Alle Gemeinden auf Föhr (Wyk und Inseldörfer)</b><br>3,50 € pro Tag in der Hauptsaison, 1,80 € in der übrigen Zeit (2026 unverändert, einheitlich auf Föhr und Amrum)</li></ul>
+        <p class="ihint">Die Kurabgabe zahlen Sie über Ihren Gastgeber; dafür erhalten Sie eine Gästekarte. Befreiungen und Ermäßigungen regelt die Satzung der Gemeinde. Stand: November 2026 – verbindlich sind die Angaben auf <a href="https://www.foehr.de/" target="_blank" rel="noopener">foehr.de</a>.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
